@@ -1,0 +1,180 @@
+:root {
+  /*
+   * ==========================================================================
+   *  DEFINIÇÃO DAS CORES
+   * ==========================================================================
+   */
+
+  /* Cores Pink*/
+  --pink-light: #c59dd2;
+  --pink-base: #9547a5;
+  --pink-dark: #7d298a;
+  --pink-low: #3f0f41;
+
+  /* Cores Blue*/
+  --blue-light: #73b6d2;
+  --blue-base: #358bb9;
+  --blue-mid: #2374a4;
+  --blue-dark: #144a72;
+  --blue-low: #08233c;
+
+  /* Shape */
+  --shape-stroke: #002347;
+  --shape-hover: #001933;
+  --shape-base: #000f1f;
+  --shape-background: #00050a;
+
+  /* Text */
+  --text-title: #f8fbfb;
+  --text-body: #e2e7e9;
+  --text-label: #bac6c9;
+
+  /*
+   * ==========================================================================
+   *  DEFINIÇÃO DAS FONTS
+   * ==========================================================================
+   */
+
+  /* fonts family */
+  --font-family-raleway: "Raleway", sans-serif;
+
+  /* Title lg */
+  --title-lg-font-size: 48px;
+  --title-lg-line-height: auto;
+  --title-lg-font-weight: 700; /* Bold */
+  --title-lg-text-transform: none; /* Default */
+  --title-lg-letter-spacing: 0%;
+
+  /* Title md */
+  --title-md-font-size: 40px;
+  --title-md-line-height: auto;
+  --title-md-font-weight: 700; /* Bold */
+  --title-md-text-transform: none; /* Default */
+  --title-md-letter-spacing: 0%;
+
+  /* Title sm */
+  --title-sm-font-size: 32px;
+  --title-sm-line-height: auto;
+  --title-sm-font-weight: 700; /* Bold */
+  --title-sm-text-transform: none; /* Default */
+  --title-sm-letter-spacing: 0%;
+
+  /* Title xs */
+  --title-xs-font-size: 16px;
+  --title-xs-line-height: normal; /* Auto% */
+  --title-xs-font-weight: 700; /* Bold */
+  --title-xs-text-transform: none; /* Default */
+  --title-xs-letter-spacing: 0%;
+
+  /* Subtitle */
+  --subtitle-font-size: 32px;
+  --subtitle-line-height: 200%;
+  --subtitle-font-weight: 500; /* Medium */
+  --subtitle-text-transform: none; /* Default */
+  --subtitle-letter-spacing: 0%;
+
+  /* Body lg */
+  --body-lg-font-size: 20px;
+  --body-lg-line-height: 140%;
+  --body-lg-font-weight-regular: 400; /* Regular */
+  --body-lg-font-weight-bold: 700; /* Bold */
+  --body-lg-text-transform: none; /* Default */
+  --body-lg-letter-spacing: 0%;
+
+  /* Body md */
+  --body-md-font-size: 16px;
+  --body-md-line-height: 140%;
+  --body-md-font-weight-regular: 400; /* Regular */
+  --body-md-font-weight-bold: 700; /* Bold */
+  --body-md-text-transform: none; /* Default */
+  --body-md-letter-spacing: 0%;
+
+  /* Body sm */
+  --body-sm-font-size: 14px;
+  --body-sm-line-height: 140%;
+  --body-sm-font-weight-regular: 400; /* Regular */
+  --body-sm-font-weight-bold: 700; /* Bold */
+  --body-sm-text-transform: none; /* Default */
+  --body-sm-letter-spacing: 0%;
+
+  /* Body xs */
+  --body-xs-font-size: 12px;
+  --body-xs-line-height: 140%;
+  --body-xs-font-weight-regular: 400; /* Regular */
+  --body-xs-font-weight-bold: 700; /* Bold */
+  --body-xs-text-transform: none; /* Default */
+  --body-xs-letter-spacing: 0%;
+
+  /* Button */
+  --button-font-size: 14px;
+  --button-line-height: auto;
+  --button-font-weight: 700; /* Bold */
+  --button-text-transform: none; /* Default */
+  --button-letter-spacing: 0%;
+
+  /* Link */
+  --link-font-size: 14px;
+  --link-line-height: auto;
+  --link-font-weight: 500; /* Medium */
+  --link-text-transform: none; /* Default */
+  --link-letter-spacing: 0%;
+
+  /* Tag */
+  --tag-font-size: 10px;
+  --tag-line-height: auto;
+  --tag-font-weight: 700; /* Bold */
+  --tag-text-transform: uppercase;
+  --tag-letter-spacing: 0.05em; /* 5% */
+
+  /*
+   * ==========================================================================
+   * FONTS PRONTA PARA USAR BASTA COLOCAR NO font A VARIAVEL
+   * ==========================================================================
+   */
+
+  /* Títulos */
+  --font-title-lg: 700 48px / normal var(--font-family-raleway);
+  --font-title-md: 700 40px / normal var(--font-family-raleway);
+  --font-title-sm: 700 32px / normal var(--font-family-raleway);
+  --font-title-xs: 700 16px / normal var(--font-family-raleway);
+
+  /* Subtítulo */
+  --font-subtitle: 500 32px/200% var(--font-family-raleway);
+
+  /* Corpo de Texto (Regular & Bold) */
+  --font-body-lg: 400 20px/140% var(--font-family-raleway);
+  --font-body-lg-bold: 700 20px/140% var(--font-family-raleway);
+
+  --font-body-md: 400 16px/140% var(--font-family-raleway);
+  --font-body-md-bold: 700 16px/140% var(--font-family-raleway);
+
+  --font-body-sm: 400 14px/140% var(--font-family-raleway);
+  --font-body-sm-bold: 700 14px/140% var(--font-family-raleway);
+
+  --font-body-xs: 400 12px/140% var(--font-family-raleway);
+  --font-body-xs-bold: 700 12px/140% var(--font-family-raleway);
+
+  /* Componentes */
+  --font-button: 700 14px / normal var(--font-family-raleway);
+  --font-link: 500 14px / normal var(--font-family-raleway);
+  --font-tag: 700 10px / normal var(--font-family-raleway);
+
+  /*
+   * ==========================================================================
+   * PROPRIEDADES ADICIONAIS
+   * ==========================================================================
+   */
+
+  --text-transform-tag: uppercase;
+  --letter-spacing-tag: 0.05em; /* 5% é melhor representado como 0.05em */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font: var(--font-body-md);
+}
