@@ -112,6 +112,8 @@
   --button-text-transform: none; /* Default */
   --button-letter-spacing: 0%;
 
+  --font-button: var(--button-font-weight) var(--button-font-size)/var(--button-line-height) var(--font-family-raleway) var(--button-letter-spacing)
+
   /* Link */
   --link-font-size: 14px;
   --link-line-height: auto;
@@ -177,4 +179,14 @@
   box-sizing: border-box;
 
   font: var(--font-body-md);
+}
+
+a {
+  text-decoration: none;
+}
+body{
+    background: radial-gradient(
+    var(--shape-base) 0%,
+    var(--pink-low) 100%
+  );
 }

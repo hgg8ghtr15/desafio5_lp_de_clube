@@ -1,0 +1,96 @@
+#hero {
+  /* background-image: url(../assets/imgens/hero-background.png); */
+  /* background: radial-gradient(
+    var(--shape-base) 0%,
+    var(--pink-low) 100%
+  ); */
+
+  --pink-light: #c59dd2;
+  --pink-base: #9547a5;
+  --pink-dark: #7d298a;
+  --pink-low: #3f0f41;
+
+    --shape-stroke: #002347;
+  --shape-hover: #001933;
+  --shape-base: #000f1f;
+  --shape-background: #00050a;
+
+  display: flex;
+  height: 95.25rem;
+  padding-top: 3.5rem;
+  margin: auto;
+  justify-content: center;
+  object-fit: cover;
+  position: relative;
+
+  & img[src*="hero"] {
+    position: absolute;
+    top: 0;
+    height: 59.25rem;
+    max-width: 90rem;
+    z-index: -1;
+  }
+
+  nav {
+    width: 70rem;
+  }
+
+  header {
+    width: 41rem;
+    height: 12.5rem;
+    text-align: center;
+    margin-top: 10.25rem;
+    gap: 2rem;
+    & :nth-child(1) {
+      /* background-color: brown; */
+      color: var(--text-title);
+      font: var(--font-title-lg);
+    }
+    & :nth-child(2) {
+      /* background-color: blue; */
+      color: var(--text-body);
+      font: var(--font-body-lg);
+    }
+  }
+  .texto {
+    position: absolute;
+    width: 75rem;
+    height: 25rem;
+    /* background-color: brown; */
+    bottom: 9rem;
+    text-align: center;
+
+    & p {
+      position: absolute;
+      font: var(--font-subtitle);
+      color: var(--text-body);
+      bottom: 5rem;
+      & strong {
+        font: var(--font-subtitle);
+        color: var(--blue-light);
+      }
+    }
+
+    & img {
+      position: absolute;
+      width: 5.375rem;
+    }
+
+    & img:nth-child(2) {
+      bottom: 14rem;
+      left: 35.5rem;
+      rotate: 10deg;
+    }
+
+    & img:nth-child(3) {
+      bottom: 0;
+      left: 0rem;
+      rotate: 95deg;
+    }
+    & img:nth-child(4) {
+      bottom: 0;
+      right: 0rem;
+      rotate: -30deg;
+    }
+  }
+}
