@@ -185,8 +185,9 @@ a {
   text-decoration: none;
 }
 body{
-    background: radial-gradient(
-    var(--shape-base) 0%,
+    background: linear-gradient(
+    360deg,
+    var(--shape-base) 50%,
     var(--pink-low) 100%
   );
 }

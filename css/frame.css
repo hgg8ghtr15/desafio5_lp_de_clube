@@ -1,0 +1,112 @@
+#frame {
+  display: flex;
+  height: 95.25rem;
+  padding-top: 14.6875rem;
+  justify-content: center;
+  /* object-fit: cover; */
+  position: relative;
+
+  color: var(--text-title);
+  margin: auto;
+
+  & header {
+    text-align: center;
+
+    & h1 {
+      font: var(--font-title-sm);
+      gap: 2rem;
+    }
+    & p {
+      font: var(--body-md);
+    }
+  }
+
+  & .book {
+    position: relative;
+    width: 90rem;
+    height: 57.5rem;
+    /* border: 1px solid var(--shape-base); */
+    padding-block: 5.5rem;
+
+    & img[src*="book.png"] {
+      width: 29.1875rem;
+      position: absolute;
+      left: 33.5rem;
+      top: 8.375rem;
+    }
+
+    & img[src*="bookmark-yellow.png"] {
+      width: 10.75rem;
+      position: absolute;
+      right: 20.375rem;
+      top: 2.875rem;
+      rotate: +12deg;
+    }
+
+    & img[src*="bookmark-purple.png"] {
+      width: 10.75rem;
+      position: absolute;
+      right: 14.5rem;
+      top: 10.5rem;
+      rotate: +23deg;
+      z-index: -1;
+    }
+
+    & img[src*="pin.png"] {
+      width: 10.75rem;
+      position: absolute;
+      left: 27.5rem;
+      bottom: 6.25rem;
+      rotate: -8deg;
+      z-index: -1;
+    }
+
+    & img[src*="arrow-2.svg"] {
+      width: 10.875rem;
+      position: absolute;
+      left: 25rem;
+      top: 8rem;
+      rotate: -8deg;
+      /* z-index: -1; */
+    }
+
+    & img[src*="arrow-1.svg"] {
+      width: 6.5rem;
+      position: absolute;
+      left: 23.5rem;
+      bottom: 16rem;
+      rotate: -8deg;
+      z-index: -1;
+    }
+
+    & img[src*="arrow-3.svg"] {
+      width: 9rem;
+      position: absolute;
+      right: 17.5rem;
+      bottom: 9.5rem;
+      rotate: -8deg;
+      z-index: -1;
+    }
+
+    & p:nth-child(1) {
+      position: absolute;
+      left: 20rem;
+      top: 6rem;
+      z-index: -1;
+    }
+
+    & p:nth-child(2) {
+      position: absolute;
+      left: 22.5rem;
+      bottom: 25rem;
+      z-index: -1;
+    }
+
+    & p:nth-child(3) {
+      position: absolute;
+      right: 19.5rem;
+      bottom: 6.5rem;
+      z-index: -1;
+    }
+  }
+}
