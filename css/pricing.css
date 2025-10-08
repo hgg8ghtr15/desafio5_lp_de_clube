@@ -1,0 +1,137 @@
+#pricing {
+  display: flex;
+  height: 95.25rem;
+  padding-top: 3.5rem;
+  margin: auto;
+  justify-content: center;
+
+  & h2 {
+    width: 18.375rem;
+    padding-top: 12.125rem;
+    padding-bottom: 3.5rem;
+    text-align: center;
+    font: var(--font-title-sm);
+  }
+
+  & .allcards {
+    width: 65.625rem;
+    position: relative;
+
+    & .card {
+      position: absolute;
+      width: 18rem;
+      height: 450px;
+      background-color: var(--shape-hover);
+      border-radius: 1.5rem;
+      padding-inline: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 1.75rem;
+      justify-content: space-between;
+
+      & .card-buttons {
+        width: 14rem;
+        gap: 24px;
+
+        & div {
+          width: 14rem;
+          justify-content: space-between;
+        }
+      }
+
+      & h3 {
+        margin-top: 10px;
+        font: var(--font-title-md);
+        margin-bottom: 8px;
+      }
+      & ul {
+        & li {
+          font: var(--font-body-xs);
+
+          & img {
+            width: 35px;
+          }
+        }
+
+        & li:last-child {
+          margin-top: 24px;
+          /* background-color: aquamarine; */
+        }
+      }
+    }
+
+    & > div:nth-child(1) {
+      left: 85px;
+      top: 8rem;
+      rotate: -8deg;
+      z-index: -1;
+      border: 1px solid var(--blue-base);
+      background-color: var(--shape-base);
+
+      & .card-buttons {
+        & div {
+          & span {
+            display: none;
+          }
+        }
+      }
+    }
+
+    & > div:nth-child(2) {
+      position: absolute;
+      top: 82px;
+      right: 381px;
+      z-index: 1;
+    }
+
+    & > div:nth-child(3) {
+      position: absolute;
+      rotate: 8deg;
+      right: 85px;
+      top: 8rem;
+      border: 1px solid var(--blue-base);
+      background-color: var(--shape-base);
+      z-index: -1;
+
+      & .card-buttons {
+        & div {
+          & span {
+            display: none;
+          }
+        }
+      }
+    }
+
+    & img:nth-child(4) {
+      position: absolute;
+      top: 31px;
+      left: 420px;
+    }
+
+    & img:nth-child(5) {
+      position: absolute;
+      width: 37px;
+      top: 160px;
+      left: 0px;
+    }
+
+    & img:nth-child(6) {
+      position: absolute;
+      /* width: 37px; */
+      top: 90px;
+      left: 0px;
+    }
+
+    & img:nth-child(7) {
+      position: absolute;
+      width: 37px;
+      top: 600px;
+      right: 120px;
+    }
+    & img:nth-child(8) {
+      position: absolute;
+      /* width: 37px; */
+      top: 540px;
+      right: 20px;
+    }
+  }
+}
