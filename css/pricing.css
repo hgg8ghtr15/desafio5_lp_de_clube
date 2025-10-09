@@ -1,7 +1,7 @@
 #pricing {
   display: flex;
   height: 95.25rem;
-  padding-top: 3.5rem;
+  /* padding-top: 3.5rem; */
   margin: auto;
   justify-content: center;
 
@@ -20,7 +20,7 @@
     & .card {
       position: absolute;
       width: 18rem;
-      height: 450px;
+      height: 28.125rem;
       background-color: var(--shape-hover);
       border-radius: 1.5rem;
       padding-inline: 2rem;
@@ -30,7 +30,7 @@
 
       & .card-buttons {
         width: 14rem;
-        gap: 24px;
+        gap: 1.5rem;
 
         & div {
           width: 14rem;
@@ -39,16 +39,17 @@
       }
 
       & h3 {
-        margin-top: 10px;
+        margin-top: 0.625rem;
         font: var(--font-title-md);
-        margin-bottom: 8px;
+        margin-bottom: .5rem;
       }
+
       & ul {
         & li {
           font: var(--font-body-xs);
 
           & img {
-            width: 35px;
+            width: 2.1875rem;
           }
         }
 
@@ -60,7 +61,7 @@
     }
 
     & > div:nth-child(1) {
-      left: 85px;
+      left: 5.3125rem;
       top: 8rem;
       rotate: -8deg;
       z-index: -1;
@@ -78,15 +79,15 @@
 
     & > div:nth-child(2) {
       position: absolute;
-      top: 82px;
-      right: 381px;
+      top: 5.125rem;
+      right: 23.8125rem;
       z-index: 1;
     }
 
     & > div:nth-child(3) {
       position: absolute;
       rotate: 8deg;
-      right: 85px;
+      right: 5.3125rem;
       top: 8rem;
       border: 1px solid var(--blue-base);
       background-color: var(--shape-base);
@@ -103,35 +104,35 @@
 
     & img:nth-child(4) {
       position: absolute;
-      top: 31px;
-      left: 420px;
+      top: 1.9375rem;
+      left: 26.25rem;
     }
 
     & img:nth-child(5) {
       position: absolute;
-      width: 37px;
-      top: 160px;
+      width: 2.3125rem;
+      top: 10rem;
       left: 0px;
     }
 
     & img:nth-child(6) {
       position: absolute;
       /* width: 37px; */
-      top: 90px;
+      top: 5.625rem;
       left: 0px;
     }
 
     & img:nth-child(7) {
       position: absolute;
-      width: 37px;
-      top: 600px;
-      right: 120px;
+      width: 2.3125rem;
+      top: 37.5rem;
+      right: 7.5rem;
     }
     & img:nth-child(8) {
       position: absolute;
       /* width: 37px; */
-      top: 540px;
-      right: 20px;
+      top: 33.75rem;
+      right: 1.25rem;
     }
   }
 }

@@ -55,6 +55,7 @@
       font: var(--font-subtitle);
       color: var(--text-body);
       bottom: 5rem;
+
       & strong {
         font: var(--font-subtitle);
         color: var(--blue-light);
