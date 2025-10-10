@@ -12,101 +12,235 @@
   & header {
     text-align: center;
 
-    & h1 {
-      font: var(--font-title-sm);
-      gap: 2rem;
+    & h2 {
+      font: var(--font-title-bold);
+      /* gap: 2rem; */
+      & img{
+        width: 60px;
+      }
     }
     & p {
-      font: var(--body-md);
+      font: var(--font-body-sm);
     }
+  }
+
+  .container{
+gap: 64px;
   }
 
   & .book {
     position: relative;
-    width: 90rem;
-    height: 57.5rem;
+    width: 375px;
+    height: 631px;
     /* border: 1px solid var(--shape-base); */
-    padding-block: 5.5rem;
+    /* padding-block: 5.5rem; */
 
     & img[src*="book.png"] {
-      width: 29.1875rem;
+      width: 157px;
       position: absolute;
-      left: 33.5rem;
-      top: 8.375rem;
+      top: 50px;
+      left: 90px;
+      z-index: 1;
     }
 
     & img[src*="bookmark-yellow.png"] {
-      width: 10.75rem;
+      width: 58px;
       position: absolute;
-      right: 20.375rem;
-      top: 2.875rem;
+      top: 35px;
+      right: 90px;
       rotate: +12deg;
     }
 
     & img[src*="bookmark-purple.png"] {
-      width: 10.75rem;
+      width: 57px;
       position: absolute;
-      right: 14.5rem;
-      top: 10.5rem;
+      top: 85px;
+      right: 60px;
       rotate: +23deg;
       z-index: -1;
     }
 
     & img[src*="pin.png"] {
-      width: 10.75rem;
+      width: 74.89px;
+      height: 85.4px;
       position: absolute;
-      left: 27.5rem;
-      bottom: 6.25rem;
+      bottom: 340px;
+      left: 45px;
       rotate: -8deg;
       z-index: -1;
     }
 
     & img[src*="arrow-2.svg"] {
-      width: 10.875rem;
+      width: 58px;
       position: absolute;
-      left: 25rem;
-      top: 8rem;
+      top: 45px;
+      left: 40px;
       rotate: -8deg;
       /* z-index: -1; */
     }
 
     & img[src*="arrow-1.svg"] {
-      width: 6.5rem;
+      width: 35.29px;
       position: absolute;
-      left: 23.5rem;
-      bottom: 16rem;
+      left: 25px;
+      bottom: 405px;
       rotate: -8deg;
       z-index: -1;
     }
 
     & img[src*="arrow-3.svg"] {
-      width: 9rem;
+      width: 49px;
       position: absolute;
-      right: 17.5rem;
-      bottom: 9.5rem;
+      right: 78px;
+      bottom: 340px;
       rotate: -8deg;
       z-index: -1;
     }
 
     & p:nth-child(1) {
       position: absolute;
-      left: 20rem;
-      top: 6rem;
+      font: var(--font-tag);
+      top:30px;
+      left: 10px;
       z-index: -1;
     }
 
     & p:nth-child(2) {
       position: absolute;
-      left: 22.5rem;
-      bottom: 25rem;
+      left: 10px;
+      top: 165px;
+      font: var(--font-tag);
       z-index: -1;
     }
 
     & p:nth-child(3) {
       position: absolute;
-      right: 19.5rem;
-      bottom: 6.5rem;
+      font: var(--font-tag);
+      top: 300px;
+      right: 50px;
       z-index: -1;
+    }
+  }
+}
+
+@media (width >= 1440px) {
+  #frame {
+    display: flex;
+    /* height: 95.25rem; */
+    padding-top: 14.6875rem;
+    justify-content: center;
+    /* object-fit: cover; */
+    position: relative;
+
+    color: var(--text-title);
+    margin: auto;
+
+    & header {
+      text-align: center;
+
+      & h2 {
+      font: var(--font-title-bold);
+      /* gap: 2rem; */
+      & img{
+        width: 60px;
+      }
+    }
+    & p {
+      font: var(--font-body-sm);
+    }
+    }
+
+    & .book {
+      position: relative;
+      width: 90rem;
+      height: 57.5rem;
+      /* border: 1px solid var(--shape-base); */
+      padding-block: 5.5rem;
+      
+      & img[src*="book.png"] {
+        width: 29.1875rem;
+        position: absolute;
+        left: 33.5rem;
+        top: 8.375rem;
+      }
+
+      & img[src*="bookmark-yellow.png"] {
+        width: 10.75rem;
+        position: absolute;
+        right: 20.375rem;
+        top: 2.875rem;
+        rotate: +12deg;
+      }
+
+      & img[src*="bookmark-purple.png"] {
+        width: 10.75rem;
+        position: absolute;
+        right: 14.5rem;
+        top: 10.5rem;
+        rotate: +23deg;
+        z-index: -1;
+      }
+
+      & img[src*="pin.png"] {
+        width: 222px;
+        height: 254px;
+        position: absolute;
+        left: 25rem;
+        bottom: 5.25rem;
+        rotate: -8deg;
+        z-index: -1;
+      }
+
+      & img[src*="arrow-2.svg"] {
+        width: 10.875rem;
+        position: absolute;
+        left: 25rem;
+        top: 8rem;
+        rotate: -8deg;
+        /* z-index: -1; */
+      }
+
+      & img[src*="arrow-1.svg"] {
+        width: 6.5rem;
+        position: absolute;
+        left: 21.5rem;
+        bottom: 18rem;
+        rotate: -8deg;
+        z-index: -1;
+      }
+
+      & img[src*="arrow-3.svg"] {
+        width: 9rem;
+        position: absolute;
+        right: 17.5rem;
+        bottom: 9.5rem;
+        rotate: -8deg;
+        z-index: -1;
+      }
+
+      & p:nth-child(1) {
+        position: absolute;
+        font: var(--font-body-sm);
+        left: 20rem;
+        top: 7rem;
+        z-index: -1;
+      }
+
+      & p:nth-child(2) {
+        position: absolute;
+        font: var(--font-body-sm);
+        left: 20.5rem;
+        top: 470px;
+        z-index: -1;
+      }
+
+      & p:nth-child(3) {
+        position: absolute;
+        font: var(--font-body-sm);
+        top: 790px;
+        right: 300px;
+        z-index: -1;
+      }
     }
   }
 }

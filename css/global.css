@@ -112,7 +112,7 @@
   --button-text-transform: none; /* Default */
   --button-letter-spacing: 0%;
 
-  --font-button: var(--button-font-weight) var(--button-font-size)/var(--button-line-height) var(--font-family-raleway) var(--button-letter-spacing)
+  --font-button: var(--button-font-weight) var(--button-font-size)/var(--button-line-height) var(--font-family-raleway) var(--button-letter-spacing);
 
   /* Link */
   --link-font-size: 14px;
@@ -140,6 +140,7 @@
   --font-title-sm: 700 32px / normal var(--font-family-raleway);
   --font-title-xs: 700 16px / normal var(--font-family-raleway);
   --font-title-bold: 700 28px / normal var(--font-family-raleway);  /* h1 */
+  --font-title-bold: 700 24px / normal var(--font-family-raleway);  /* h2 */
 
   /* Subtítulo */
   --font-subtitle: 500 32px/200% var(--font-family-raleway);
@@ -160,7 +161,7 @@
   /* Componentes */
   --font-button: 700 14px / normal var(--font-family-raleway);
   --font-link: 500 14px / normal var(--font-family-raleway);
-  --font-tag: 700 10px / normal var(--font-family-raleway);
+  --font-tag: 400 10px / normal var(--font-family-raleway); /* P smal frame */
 
   /*
    * ==========================================================================
@@ -180,6 +181,9 @@
   --font-title-sm: 700 32px / normal var(--font-family-raleway);
   --font-title-xs: 700 16px / normal var(--font-family-raleway);
 
+  --font-title-bold: 700 32px / normal var(--font-family-raleway);  /* h2 */
+
+
   /* Subtítulo */
   --font-subtitle: 500 32px/200% var(--font-family-raleway);
 
@@ -187,10 +191,7 @@
   --font-body-lg: 400 20px/140% var(--font-family-raleway);
   --font-body-lg-bold: 700 20px/140% var(--font-family-raleway);
 
-  --font-body-md: 400 16px/140% var(--font-family-raleway);
-  --font-body-md-bold: 700 16px/140% var(--font-family-raleway);
-
-  --font-body-sm: 400 14px/140% var(--font-family-raleway);
+  --font-body-sm: 400 16px/140% var(--font-family-raleway); /* P */
   --font-body-sm-bold: 700 14px/140% var(--font-family-raleway);
 
   --font-body-xs: 400 12px/140% var(--font-family-raleway);
