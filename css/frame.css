@@ -1,9 +1,7 @@
 #frame {
   display: flex;
-  /* height: 95.25rem; */
   padding-top: 14.6875rem;
   justify-content: center;
-  /* object-fit: cover; */
   position: relative;
 
   color: var(--text-title);
@@ -14,8 +12,7 @@
 
     & h2 {
       font: var(--font-title-bold);
-      /* gap: 2rem; */
-      & img{
+      & img {
         width: 60px;
       }
     }
@@ -24,16 +21,14 @@
     }
   }
 
-  .container{
-gap: 64px;
+  .container {
+    gap: 64px;
   }
 
   & .book {
     position: relative;
     width: 375px;
     height: 631px;
-    /* border: 1px solid var(--shape-base); */
-    /* padding-block: 5.5rem; */
 
     & img[src*="book.png"] {
       width: 157px;
@@ -76,7 +71,6 @@ gap: 64px;
       top: 45px;
       left: 40px;
       rotate: -8deg;
-      /* z-index: -1; */
     }
 
     & img[src*="arrow-1.svg"] {
@@ -100,7 +94,7 @@ gap: 64px;
     & p:nth-child(1) {
       position: absolute;
       font: var(--font-tag);
-      top:30px;
+      top: 30px;
       left: 10px;
       z-index: -1;
     }
@@ -125,38 +119,25 @@ gap: 64px;
 
 @media (width >= 1440px) {
   #frame {
-    display: flex;
-    /* height: 95.25rem; */
-    padding-top: 14.6875rem;
-    justify-content: center;
-    /* object-fit: cover; */
-    position: relative;
-
     color: var(--text-title);
     margin: auto;
 
     & header {
-      text-align: center;
-
       & h2 {
-      font: var(--font-title-bold);
-      /* gap: 2rem; */
-      & img{
-        width: 60px;
+        font: var(--font-title-bold);
+        & img {
+          width: 60px;
+        }
       }
-    }
-    & p {
-      font: var(--font-body-sm);
-    }
+      & p {
+        font: var(--font-body-sm);
+      }
     }
 
     & .book {
-      position: relative;
       width: 90rem;
       height: 57.5rem;
-      /* border: 1px solid var(--shape-base); */
-      padding-block: 5.5rem;
-      
+
       & img[src*="book.png"] {
         width: 29.1875rem;
         position: absolute;
@@ -197,7 +178,6 @@ gap: 64px;
         left: 25rem;
         top: 8rem;
         rotate: -8deg;
-        /* z-index: -1; */
       }
 
       & img[src*="arrow-1.svg"] {

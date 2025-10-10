@@ -1,10 +1,8 @@
 #pricing {
   display: flex;
-  height: 95.25rem;
-  /* padding-top: 3.5rem; */
   margin: auto;
   justify-content: center;
-
+  padding-bottom: 20px;
   & h2 {
     width: 18.375rem;
     padding-top: 12.125rem;
@@ -14,11 +12,11 @@
   }
 
   & .allcards {
-    width: 65.625rem;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
     & .card {
-      position: absolute;
       width: 18rem;
       height: 28.125rem;
       background-color: var(--shape-hover);
@@ -41,7 +39,7 @@
       & h3 {
         margin-top: 0.625rem;
         font: var(--font-title-md);
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
       }
 
       & ul {
@@ -61,10 +59,6 @@
     }
 
     & > div:nth-child(1) {
-      left: 5.3125rem;
-      top: 8rem;
-      rotate: -8deg;
-      z-index: -1;
       border: 1px solid var(--blue-base);
       background-color: var(--shape-base);
 
@@ -75,23 +69,20 @@
           }
         }
       }
+
     }
 
     & > div:nth-child(2) {
-      position: absolute;
-      top: 5.125rem;
-      right: 23.8125rem;
-      z-index: 1;
+      border: 1px solid var(--shape-base);
+      &:hover{
+        border: 1px solid var(--blue-base);
+        background-color: var(--shape-base);
+      }
     }
 
     & > div:nth-child(3) {
-      position: absolute;
-      rotate: 8deg;
-      right: 5.3125rem;
-      top: 8rem;
       border: 1px solid var(--blue-base);
       background-color: var(--shape-base);
-      z-index: -1;
 
       & .card-buttons {
         & div {
@@ -103,36 +94,162 @@
     }
 
     & img:nth-child(4) {
-      position: absolute;
-      top: 1.9375rem;
-      left: 26.25rem;
+      display: none;
     }
 
     & img:nth-child(5) {
-      position: absolute;
-      width: 2.3125rem;
-      top: 10rem;
-      left: 0px;
+      display: none;
     }
 
     & img:nth-child(6) {
-      position: absolute;
-      /* width: 37px; */
-      top: 5.625rem;
-      left: 0px;
+      display: none;
     }
 
     & img:nth-child(7) {
-      position: absolute;
-      width: 2.3125rem;
-      top: 37.5rem;
-      right: 7.5rem;
+      display: none;
     }
     & img:nth-child(8) {
-      position: absolute;
-      /* width: 37px; */
-      top: 33.75rem;
-      right: 1.25rem;
+      display: none;
+    }
+  }
+}
+
+@media (width >= 1440px) {
+  #pricing {
+    display: flex;
+    height: 95.25rem;
+    padding-bottom: none;
+    margin: auto;
+    justify-content: center;
+    & h2 {
+      width: 18.375rem;
+      padding-top: 12.125rem;
+      padding-bottom: 3.5rem;
+      text-align: center;
+      font: var(--font-title-sm);
+    }
+
+    & .allcards {
+      width: 65.625rem;
+      position: relative;
+
+      & .card {
+        position: absolute;
+        width: 18rem;
+        height: 28.125rem;
+        background-color: var(--shape-hover);
+        border-radius: 1.5rem;
+        padding-inline: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 1.75rem;
+        justify-content: space-between;
+
+        & .card-buttons {
+          width: 14rem;
+          gap: 1.5rem;
+
+          & div {
+            width: 14rem;
+            justify-content: space-between;
+          }
+        }
+
+        & h3 {
+          margin-top: 0.625rem;
+          font: var(--font-title-md);
+          margin-bottom: 0.5rem;
+        }
+
+        & ul {
+          & li {
+            font: var(--font-body-xs);
+
+            & img {
+              width: 2.1875rem;
+            }
+          }
+
+          & li:last-child {
+            margin-top: 24px;
+            /* background-color: aquamarine; */
+          }
+        }
+      }
+
+      & > div:nth-child(1) {
+        left: 5.3125rem;
+        top: 8rem;
+        rotate: -8deg;
+        z-index: -1;
+        border: 1px solid var(--blue-base);
+        background-color: var(--shape-base);
+
+        & .card-buttons {
+          & div {
+            & span {
+              display: none;
+            }
+          }
+        }
+      }
+
+      & > div:nth-child(2) {
+        position: absolute;
+        top: 5.125rem;
+        right: 23.8125rem;
+        z-index: 1;
+      }
+
+      & > div:nth-child(3) {
+        position: absolute;
+        rotate: 8deg;
+        right: 5.3125rem;
+        top: 8rem;
+        border: 1px solid var(--blue-base);
+        background-color: var(--shape-base);
+        z-index: -1;
+
+        & .card-buttons {
+          & div {
+            & span {
+              display: none;
+            }
+          }
+        }
+      }
+
+      & img:nth-child(4) {
+        position: absolute;
+        top: 1.9375rem;
+        left: 26.25rem;
+      }
+
+      & img:nth-child(5) {
+        position: absolute;
+        width: 2.3125rem;
+        top: 10rem;
+        left: 0px;
+      }
+
+      & img:nth-child(6) {
+        position: absolute;
+        /* width: 37px; */
+        top: 5.625rem;
+        left: 0px;
+      }
+
+      & img:nth-child(7) {
+        position: absolute;
+        width: 2.3125rem;
+        top: 37.5rem;
+        right: 7.5rem;
+      }
+      & img:nth-child(8) {
+        position: absolute;
+        /* width: 37px; */
+        top: 33.75rem;
+        right: 1.25rem;
+      }
     }
   }
 }

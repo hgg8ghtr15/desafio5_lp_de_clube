@@ -4,8 +4,10 @@
 
   & div {
     margin: auto;
+
     & nav {
       width: 335px;
+
       & img {
         opacity: 0;
         animation: aparecer 0.5s ease-out forwards; /* Propriedades da animação */
@@ -83,7 +85,7 @@
         right: 74px;
         rotate: 15deg;
 
-        opacity: 0;
+        opacity: 1;
         /* animation: aparecer 0.5s ease-out forwards; 
         animation-fill-mode: forwards; 
         animation-delay: 3.4s; */
@@ -97,7 +99,7 @@
         left: 14px;
         rotate: -30deg;
 
-        opacity: 0;
+        opacity: 1;
         /* animation: aparecer 0.5s ease-out forwards;
         animation-fill-mode: forwards; 
         animation-delay: 3.8s; */
@@ -112,7 +114,7 @@
         right: 20px;
         rotate: -15deg;
 
-        opacity: 0;
+        opacity: 1;
         /* animation: aparecer 0.5s ease-out forwards; 
         animation-fill-mode: forwards; 
         animation-delay: 4.2s; */
@@ -163,6 +165,7 @@
     height: 1524px;
     padding-top: 56px;
     & div {
+
       & nav {
         width: 1120px;
       }
@@ -196,12 +199,12 @@
           margin-top: 81.66px;
           text-align: center;
           font: var(--font-subtitle);
-          /* color: var(--text-body); */
 
           & strong {
             font: var(--font-subtitle);
           }
         }
+
         & img {
           width: 80px;
           position: absolute;
@@ -211,8 +214,8 @@
           top: 13px;
           right: 562px;
           rotate: 20deg;
-
           transition: rotate 0.3s ease;
+
           &:hover {
             rotate: 0deg;
           }
