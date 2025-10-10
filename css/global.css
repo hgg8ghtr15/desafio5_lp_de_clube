@@ -139,6 +139,46 @@
   --font-title-md: 700 40px / normal var(--font-family-raleway);
   --font-title-sm: 700 32px / normal var(--font-family-raleway);
   --font-title-xs: 700 16px / normal var(--font-family-raleway);
+  --font-title-bold: 700 28px / normal var(--font-family-raleway);  /* h1 */
+
+  /* Subtítulo */
+  --font-subtitle: 500 32px/200% var(--font-family-raleway);
+
+  /* Corpo de Texto (Regular & Bold) */
+  --font-body-lg: 400 20px/140% var(--font-family-raleway);
+  --font-body-lg-bold: 700 20px/140% var(--font-family-raleway);
+
+  --font-body-md: 400 16px/140% var(--font-family-raleway);
+  --font-body-md-bold: 700 16px/140% var(--font-family-raleway);
+
+  --font-body-sm: 400 14px/140% var(--font-family-raleway); /* p */
+  --font-body-sm-bold: 700 14px/140% var(--font-family-raleway);
+
+  --font-body-xs: 400 12px/140% var(--font-family-raleway);
+  --font-body-xs-bold: 700 12px/140% var(--font-family-raleway);
+
+  /* Componentes */
+  --font-button: 700 14px / normal var(--font-family-raleway);
+  --font-link: 500 14px / normal var(--font-family-raleway);
+  --font-tag: 700 10px / normal var(--font-family-raleway);
+
+  /*
+   * ==========================================================================
+   * PROPRIEDADES ADICIONAIS
+   * ==========================================================================
+   */
+
+  --text-transform-tag: uppercase;
+  --letter-spacing-tag: 0.05em; /* 5% é melhor representado como 0.05em */
+}
+
+@media (width >= 1440px) {
+  :root {
+  /* Títulos */
+  --font-title-lg: 700 48px / normal var(--font-family-raleway);
+  --font-title-md: 700 40px / normal var(--font-family-raleway);
+  --font-title-sm: 700 32px / normal var(--font-family-raleway);
+  --font-title-xs: 700 16px / normal var(--font-family-raleway);
 
   /* Subtítulo */
   --font-subtitle: 500 32px/200% var(--font-family-raleway);
@@ -160,15 +200,8 @@
   --font-button: 700 14px / normal var(--font-family-raleway);
   --font-link: 500 14px / normal var(--font-family-raleway);
   --font-tag: 700 10px / normal var(--font-family-raleway);
-
-  /*
-   * ==========================================================================
-   * PROPRIEDADES ADICIONAIS
-   * ==========================================================================
-   */
-
-  --text-transform-tag: uppercase;
-  --letter-spacing-tag: 0.05em; /* 5% é melhor representado como 0.05em */
+  }
+  
 }
 
 *,
